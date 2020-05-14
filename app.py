@@ -11,8 +11,12 @@ app = Flask(__name__)
 
 #static route
 @app.route("/")
-def intro():
+def home():
     return render_template("index.html")
+
+@app.route("/memes")
+def memes():
+    return render_template("memes.html")
 
 #start the server
 if __name__ == "__main__":
