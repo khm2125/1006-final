@@ -18,6 +18,11 @@ def home():
 def memes():
     return render_template("memes.html")
 
+@app.route("/harrystyles")
+def harry():
+    return render_template("harrystyles.html")
+
+
 #start the server
 if __name__ == "__main__":
     app.run()
